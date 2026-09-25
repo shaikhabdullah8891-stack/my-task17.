@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnect - Job Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            JobConnect
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Find Your Dream Job</h1>
+
+            <p>
+                Search thousands of job opportunities
+                and start your career journey.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search job title or company">
+
+                <button id="searchBtn">
+                    Search Jobs
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Jobs Section -->
+    <section class="section" id="jobs">
+
+        <h2>Latest Job Opportunities</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <select id="locationFilter">
+                <option value="all">All Locations</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Remote">Remote</option>
+            </select>
+
+            <select id="jobTypeFilter">
+                <option value="all">All Job Types</option>
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Internship">Internship</option>
+            </select>
+
+        </div>
+
+
+        <!-- Job Cards -->
+        <div class="job-grid" id="jobList">
+
+            <!-- Job 1 -->
+            <div class="job-card"
+                data-title="Frontend Developer"
+                data-company="TechSolutions"
+                data-location="Mumbai"
+                data-type="Full Time">
+
+                <div class="job-icon">💻</div>
+
+                <h3>Frontend Developer</h3>
+
+                <p class="company">
+                    TechSolutions
+                </p>
+
+                <p>
+                    Build responsive websites using HTML,
+                    CSS and JavaScript.
+                </p>
+
+                <div class="job-details">
+                    <span>📍 Mumbai</span>
+                    <span>💼 Full Time</span>
+                </div>
+
+                <h4>₹25,000 / Month</h4>
+
+                <button class="details-btn">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- Job 2 -->
+            <div class="job-card"
+                data-title="Python Developer"
+                data-company="CodeWorks"
+                data-location="Pune"
+                data-type="Full Time">
+
+                <div class="job-icon">🐍</div>
+
+                <h3>Python Developer</h3>
+
+                <p class="company">
+                    CodeWorks
+                </p>
+
+                <p>
+                    Develop applications and APIs using
+                    Python programming.
+                </p>
+
+                <div class="job-details">
+                    <span>📍 Pune</span>
+                    <span>💼 Full Time</span>
+                </div>
+
+                <h4>₹30,000 / Month</h4>
+
+                <button class="details-btn">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- Job 3 -->
+            <div class="job-card"
+                data-title="UI UX Designer"
+                data-company="DesignHub"
+                data-location="Remote"
+                data-type="Part Time">
+
+                <div class="job-icon">🎨</div>
+
+                <h3>UI/UX Designer</h3>
+
+                <p class="company">
+                    DesignHub
+                </p>
+
+                <p>
+                    Design modern and user-friendly
+                    website interfaces.
+                </p>
+
+                <div class="job-details">
+                    <span>📍 Remote</span>
+                    <span>💼 Part Time</span>
+                </div>
+
+                <h4>₹20,000 / Month</h4>
+
+                <button class="details-btn">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- Job 4 -->
+            <div class="job-card"
+                data-title="Web Development Intern"
+                data-company="WebTech"
+                data-location="Mumbai"
+                data-type="Internship">
+
+                <div class="job-icon">🌐</div>
+
+                <h3>Web Development Intern</h3>
+
+                <p class="company">
+                    WebTech
+                </p>
+
+                <p>
+                    Learn and work on real-world web
+                    development projects.
+                </p>
+
+                <div class="job-details">
+                    <span>📍 Mumbai</span>
+                    <span>💼 Internship</span>
+                </div>
+
+                <h4>₹10,000 / Month</h4>
+
+                <button class="details-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <h2>About JobConnect</h2>
+
+        <p>
+            JobConnect helps users discover job opportunities,
+            search for suitable positions and view job details
+            easily.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Email: support@jobconnect.com
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 JobConnect. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
